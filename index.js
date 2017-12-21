@@ -65,6 +65,7 @@ app.get('/info/2/:name', function(req, res) {
   
 });
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+app.listen(port);
 
 console.log('Magic happens on port 3000');
